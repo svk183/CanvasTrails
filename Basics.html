@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas Trails</title>
+</head>
+<body>
+	<canvas id="myCanvas" width="1000" height="1000"></canvas>
+
+
+<script type="text/javascript">
+	var canvas = document.getElementById("myCanvas");
+	var ctx = canvas.getContext("2d");
+	/*ctx.fillStyle = "#455667";
+	ctx.fillRect(50,50,100,75);	//fillRect - x, y, width, height*/
+	/*ctx.moveTo(0,0);		//STARTpoints x, y
+	ctx.lineTo(200,1000);	//enpoints x, y
+	ctx.stroke();*/
+	ctx.beginPath();
+	ctx.arc(95,50,40,0,2*Math.PI);		//arc(x, y, r, startangle, endangle)
+	ctx.stroke();
+</script>
+</body>
+</html>
